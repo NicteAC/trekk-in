@@ -1,103 +1,53 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  background-color: #000000;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
+.button {
   font-family: "Raleway", sans-serif;
-  box-sizing: border-box;
+  font-weight: 400;
+  color: #FFF;
+  background-color: #2AB7CA;
+  border: none;
 }
-
-.botones {
-  text-align: right;
+.button__regular {
+  padding: 0.3rem 1.5rem;
 }
-
-.contenedor {
-  margin: auto;
+.button__large {
+  padding: 0.8rem 2rem;
   width: 100%;
 }
-
-.caja .contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.button:hover {
+  background-color: #77D1DD;
+}
+.button:focus {
+  background-color: #aeacaf;
 }
 
-.caja__columna {
-  color: cornsilk;
-  background: #ffffff;
-  position: relative;
-  text-align: left;
-  width: 98%;
-  height: 800px;
-  margin: 10px;
-}
+@keyframes show1 {
+  0% {fill:#f3ebea;}
+ 20% {fill:#eed9d4}
+ 40% {fill: #ecbdb2}
+ 60% {fill: #eba393}
+ 100% {fill: #EE9480;}
+ }
 
-.caja__columna .texto {
-  position: absolute;
-  top: 50px;
-  left: 15px;
-  right: 15px;
-  bottom: 5px;
-  color: #000000;
-}
+@keyframes show2 {
+  0% {fill:#e2e6e7;}
+ 20% {fill:#8fc6ce}
+ 40% {fill: #62c9d6}
+ 60% {fill:#49bbca}
+ 100% {fill: #2AB7CA;}
+ }
 
-h1 {
-  color: #000000;
-  text-align: left;
-  font-size: 3.75rem;
-  font-weight: 700;
-}
+ <style>
+    .a-bar{
+    animation: show1 2s ease-in-out infinite;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0,0,1,1);
+    }
 
-h2 {
-  clear: both;
-  color: #000000;
-  text-align: center;
-  font-size: 1.875rem;
-  font-weight: 700;
-}
+    .b-bar{
+    animation: show2 2s ease-in-out infinite;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0,0,1,1);
+    }
 
-.caja__columna .texto h3 {
-  font-size: 40px;
-  margin: 100px 0 10px;
-}
 
-.caja__columna .texto p {
-  width: 450px;
-  font-size: 18px;
-}
-
-.bg_price {
-  position: absolute;
-  text-align: center;
-}
-
-.container_prices {
-  position: relative;
-  top: 50px;
-  left: 15px;
-  right: 15px;
-  bottom: 5px;
-  color: #000000;
-  text-align: center;
-}
-
-@media screen and (max-width: 400px) {
-  .caja__columna .texto h1 {
-    font-size: 0.75rem;
-  }
-}
-footer {
-  clear: both;
-  height: 50px;
-  background-color: #000000;
-  color: #ffffff;
-  padding-top: 10px;
-}
+</style>
+/*# sourceMappingURL=style.css.map */
