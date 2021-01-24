@@ -1,16 +1,28 @@
-@import './abstracs/variables';
-@import './abstracs/mixins';
+@import 'abstracs/variables';
+@import 'abstracs/mixins';
 
-@import './base/animations';
-@import './base/reset';
-@import './base/typography';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/animations';
 
-@import './layout/footer';
-@import './layout/grid';
-@import './layout/hero';
-@import './layout/main_section';
-@import './layout/navbar';
+@import 'layout/grid';
+@import 'layout/navbar';
+@import 'layout/hero';
+@import 'layout/main-section';
+@import 'layout/footer';
 
-@import './components/buttons';
-@import './components/cards';
+@import 'components/buttons';
+@import 'components/cards';
 
+@import 'pages/home';
+
+
+//orden de importacion
+
+//1-. abstracts
+//2-. vendor
+//3-. base
+//4-. layout
+//5-. components
+//6-. pages
+//7-. themes

@@ -1,0 +1,18 @@
+.graph {
+    &__svg {
+        &--graf {
+            animation: graphFade 2s ease-in-out 0s infinite;
+            animation-direction: alternate;
+        }
+    
+        @keyframes graphFade {
+            0% {
+                opacity: 0;
+            }
+    
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+}
