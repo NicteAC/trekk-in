@@ -1,10 +1,9 @@
-/* Error: expected "{".
- *     ,
- * 280 | © 2021 GitHub, Inc.
- *     |                    ^
- *     '
- *   sass\layout\_grid.scss 280:20  @import
- *   sass\main.scss 8:9             root stylesheet */
+/* Error: Can't find stylesheet to import.
+ *    ,
+ * 11 | @import 'layout/main-section';
+ *    |         ^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   sass\main.scss 11:9  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a     \2577 \a 280 \2502  © 2021 GitHub, Inc.\a     \2502                     ^\a     \2575 \a   sass\\layout\\_grid.scss 280:20  @import\a   sass\\main.scss 8:9             root stylesheet';
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 11 \2502  @import 'layout/main-section';\d\a    \2502          ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\main.scss 11:9  root stylesheet";
 }
